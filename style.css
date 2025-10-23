@@ -1,0 +1,154 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #333;
+}
+
+body {
+    background-image: url("./assets/paisagem-dramatica-com-raios-de-sol-brilhando-em-um-ceu-escuro-e-nublado.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    opacity: 0.85;
+    background-color: #ffffff;
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    text-align: center;
+    width: 90%;
+    max-width: 400px; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+
+
+.box-large {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0; 
+    border-radius: 50px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+}
+
+#cidade {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    padding: 5px;
+}
+
+#cidade::placeholder {
+    color: #888;
+}
+
+#img-pesquisa {
+    width: 20px; 
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#img-pesquisa:hover {
+    transform: scale(1.1);
+}
+
+
+#nome-cidade {
+    font-size: 26px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: -5px; 
+    
+   
+    white-space: normal;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    overflow: hidden;
+}
+
+#label-temperatura { 
+    font-size: 18px;
+    font-weight: 500;
+    color: #e74c3c; 
+    margin-bottom: -10px; 
+}
+
+#temperatura {
+    font-size: 60px;
+    font-weight: 700;
+    color: #333; 
+    line-height: 1; 
+}
+
+#temperatura span { 
+    font-size: 30px;
+    font-weight: 500;
+    vertical-align: super; 
+}
+
+#umidade {
+    font-size: 16px;
+    color: #555;
+    font-weight: 400; 
+    margin-top: 15px; 
+    padding-top: 15px;
+    border-top: 1px solid #eee; 
+}
+
+#umidade span {
+    font-weight: 600; 
+}
+
+
+.box-small {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+    padding-top: 15px;
+    border-top: 1px solid #eee; 
+    margin-top: 15px;
+}
+
+#previsao {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+#weather-icon-placeholder {
+    width: 15px; 
+    height: 15px;
+    background-color: #333; 
+    border-radius: 50%; 
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+
+@media (max-width: 400px) {
+    .container {
+        padding: 25px 20px;
+        margin: 15px;
+    }
+    #temperatura {
+        font-size: 50px;
+    }
+    #temperatura span {
+        font-size: 25px;
+    }
+}

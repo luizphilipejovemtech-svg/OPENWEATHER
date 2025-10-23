@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clima</title> 
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="box-large">
+                <input type="text" id="cidade" placeholder="digite a cidade">
+                <img src="./assets/loupe.png" alt="pesquisa" id="img-pesquisa" onclick="pesquisarCidade()">
+            </div>
+            
+            <h2 id="nome-cidade">Cidade</h2> 
+            
+            <h2 id="label-temperatura">Temperatura</h2> 
+            
+            <h2 id="temperatura">00</h2> 
+            
+            <p id="umidade">umidade relativa do ar </p> 
+            
+            <div class="box-small">
+                <h2 id="previsao">Previsão</h2>
+                <div id="weather-icon-placeholder"></div>
+                </div>
+        </div>
+    </main>
+<script src="mian.js"></script>
+</body>
+</html>
